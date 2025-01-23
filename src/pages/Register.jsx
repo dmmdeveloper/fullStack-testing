@@ -33,7 +33,7 @@ const submit = async(e)=>{
    fieldData.append("password", formData.password);
     try {
       setLoading(true)
-        const {data} = await axios.post(`http://localhost:4000/user/register` , fieldData , {
+        const {data} = await axios.post(`https://fulltesting.vercel.app/user/register` , fieldData , {
             withCredentials : true ,
             headers :{
                 "Content-Type":"multipart/form-data"
