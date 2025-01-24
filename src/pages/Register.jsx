@@ -32,7 +32,8 @@ export default function Register() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        `/user/register`,
+        // `http://localhost:4000/user/register`,
+`https://fulltesting.vercel.app/user/register`,
         fieldData,
         {
           withCredentials: true,
