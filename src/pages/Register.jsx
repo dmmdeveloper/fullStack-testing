@@ -32,7 +32,7 @@ export default function Register() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        ` https://fulltesting.vercel.app/user/register`,
+        `/user/register`,
         fieldData,
         {
           withCredentials: true,
@@ -129,7 +129,6 @@ export default function Register() {
               }
               onError={handleGoogleLoginError}
             />
-
 
             {/* <CustomLogin/> */}
 
