@@ -6,7 +6,10 @@ import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import CustomLogin from '../components/CustomLogin';
 
+
 export default function Register() {
+
+
   const [formData, setFormData] = useState({
     name: '',
     password: '',
@@ -28,7 +31,6 @@ export default function Register() {
     fieldData.append('name', formData.name);
     fieldData.append('email', formData.email);
     fieldData.append('password', formData.password);
-
     try {
       setLoading(true);
       const { data } = await axios.post(

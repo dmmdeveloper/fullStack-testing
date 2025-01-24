@@ -4,7 +4,7 @@ import { useAppContext } from '../context/AppContext'
 
 export default function Home() {
 
-const { hello} = useAppContext()
+const { hello} = useAppContext();
 
   return (<>
 
@@ -12,8 +12,7 @@ const { hello} = useAppContext()
 <Link to={"/register"} className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Register</Link>
 <Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Login</Link>
 <Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Logout</Link>
-<Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Get Cookies</Link>
-
+<Link to={"/profile"} className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Profile</Link>
 
 {/* <Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Register</Link> */}
 
