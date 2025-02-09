@@ -7,6 +7,8 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Profile from "./pages/Profile";
+import SendMessage from "./pages/SendMessage";
+import Camera from "./pages/Camera";
 
 function App() {
 const [profile , setProfile] = useState("")
@@ -44,6 +46,8 @@ const [profile , setProfile] = useState("")
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element ={<Profile/>} />
+          <Route path="/send-message"   element={<SendMessage/>} /> 
+          <Route path="/camera"   element={<Camera/>} /> 
         </Routes>
       </AppContextProvider>
       <Toaster />

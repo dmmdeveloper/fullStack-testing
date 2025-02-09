@@ -13,6 +13,11 @@ const { hello} = useAppContext();
 <Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Login</Link>
 <Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Logout</Link>
 <Link to={"/profile"} className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Profile</Link>
+<Link to={"/camera"} className='bg-white h-10 w-[200px] flex justify-center items-center text-xl hover:bg-transparent hover:text-white duration-500 hover:border' >Camera</Link>
+<Link to={"/send-message"} className='bg-white h-10 w-[200px] flex justify-center items-center text-xl hover:bg-transparent hover:text-white duration-500 hover:border' >Send Email Message</Link>
+
+
+
 
 {/* <Link className='bg-white h-10 w-[200px] flex justify-center items-center text-2xl hover:bg-transparent hover:text-white duration-500 hover:border' >Register</Link> */}
 
