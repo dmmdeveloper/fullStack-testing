@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import CustomLogin from '../components/CustomLogin';
+import origin from '../config';
 
 
 export default function Register() {
@@ -34,8 +35,8 @@ export default function Register() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        // `http://localhost:4000/user/register`,
-`https://fulltesting.vercel.app/user/register`,
+        `${origin}/user/register`,
+// `https://fulltesting.vercel.app/user/register`,
         fieldData,
         {
           withCredentials: true,

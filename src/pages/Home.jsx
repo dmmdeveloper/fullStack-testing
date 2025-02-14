@@ -16,6 +16,7 @@ const { hello} = useAppContext();
 <Link to={"/camera"} className='bg-white h-10 w-[200px] flex justify-center items-center text-xl hover:bg-transparent hover:text-white duration-500 hover:border' >Camera</Link>
 <Link to={"/send-message"} className='bg-white h-10 w-[200px] flex justify-center items-center text-xl hover:bg-transparent hover:text-white duration-500 hover:border' >Send Email Message</Link>
 
+origin :  {import.meta.env.VITE_ORIGIN}
 
 
 

@@ -6,8 +6,7 @@ export default function Camera() {
 capture="environment"  <input type="file" capture="environment"  />
     <br />
    capture="user" <input type="file" capture="user"  />
-
-
+   
 </div>
 
 </>  )

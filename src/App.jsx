@@ -9,6 +9,7 @@ import axios from "axios";
 import Profile from "./pages/Profile";
 import SendMessage from "./pages/SendMessage";
 import Camera from "./pages/Camera";
+import origin from "./config";
 
 function App() {
 const [profile , setProfile] = useState("")
@@ -18,14 +19,14 @@ const [profile , setProfile] = useState("")
   };
 
   const fetchProfile =  async()=>{
+
     try {
       const {data} =await axios.get(
-        // `http://localhost:4000/user/profile`,
-        `https://fulltesting.vercel.app/user/profile`,
+        `${origin}/user/profile`,
+        // `https://fulltesting.vercel.app/user/profile`,
 
          { withCredentials :true})
       setProfile(data.data)
-
     } catch (error) {
       console.log("Profile Not Fetched :)" , error);
       
